@@ -1,83 +1,86 @@
-# Finansal Asistan Projesi
+# FinSentio: AI-Powered Financial Assistant
 
-Bu proje, finansal analiz ve risk değerlendirmesi yapabilen, kullanıcılara finansal konularda yardımcı olan bir yapay zeka asistanıdır.
+FinSentio is an intelligent financial assistant designed to support users with real-time market insights, risk analysis, document processing, and financial education. It leverages state-of-the-art Large Language Model (LLM) technologies to deliver personalized, data-driven responses in both Turkish and English. 
 
-## Proje Hakkında
+## Project Overview
 
-Bu proje, LLM (Large Language Model) tabanlı bir Finansal Danışman ve Eğitim Asistanı olarak geliştirilmiştir. Projede, modern yapay zeka teknikleri başarıyla uygulanmıştır:
+This project implements an advanced LLM-based Financial Advisor and Education Assistant system using cutting-edge AI techniques, including:
 
-- **Non-parametric Grounding Teknikleri:**
-  - Function calling
-  - Multi-agent mimarisi
+  - Function Calling (non-parametric grounding)
+  - Multi-Agent Architecture
   - RAG (Retrieval-Augmented Generation)
-  - Prompt engineering
+  - Prompt Engineering
 
-Bu teknikler sayesinde:
-- Modelin güncel veriye erişimi sağlanmıştır
-- Farklı "agent"ların iş bölümü yapması gerçekleştirilmiştir
-- Prompt'ların dinamik olarak oluşturulması sağlanmıştır
-- Finansal sorulara kaynak referanslı yanıt sunulması mümkün kılınmıştır
+These techniques empower the system to:
+- Access and use up-to-date, real-world data
+- Divide responsibilities between specialized agents
+- Dynamically construct prompts tailored to user intent
+- Provide source-backed, explainable financial answers
 
-### Öne Çıkan Özellikler
-- Risk değerlendirmelerinin tablo ve özet rapor formatında sunumu
-- Gerçek zamanlı piyasa içgörüleri
-- PDF tabanlı belge analizi
-- Çift dil desteği (Türkçe-İngilizce)
+### Key Features
+- Risk Assessment: Summarized in both table and natural language formats
+- Real-Time Market Insights: Powered by APIs like Finnhub and FRED
+- PDF-Based Financial Document Analysis
+- Bilingual Support: Turkish 🇹🇷 and English 🇬🇧
+- Smart Prompting: Intent classification and tool selection for each query
+- LLM Cost Tracking: Real-time token usage and pricing calculator
 
-## Özellikler
+## Core Capabilities
 
-- Finansal analiz ve raporlama
-- Risk değerlendirmesi
+- Financial data retrieval and analysis
+- Investment and risk advice based on the saved user profile
 - Veri toplama ve analiz
-- Kullanıcı yönetimi
+- Secure and modular PDF document processing
 - PDF dosya işleme
-- ChromaDB ile veri depolama
-- LLM maliyet hesaplama
+- ChromaDB-based persistent knowledge storage
+- Transparent usage cost calculation for LLM queries
 
-## Gereksinimler
+## Installation
 
-Projeyi çalıştırmak için aşağıdaki gereksinimlere ihtiyacınız vardır:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Kurulum
 
-1. Projeyi klonlayın:
+1. Clone the repository:
 ```bash
 git clone [proje-url]
 ```
 
-2. Gerekli bağımlılıkları yükleyin:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Veritabanını oluşturun:
+3. Initialize the database:
 ```bash
 python database.py
 ```
 
-## Kullanım
+## Usage
 
-Ana uygulamayı başlatmak için:
+Run the main app locally:
 
 ```bash
 python app.py
 ```
 
-## Proje Yapısı
+The app will launch a web interface (via Gradio) where users can interact with the system, fill out a profile, and receive real-time insights.
 
-- `app.py`: Ana uygulama dosyası
-- `financial_assistant.py`: Finansal asistan modülü
-- `riskanalyzer.py`: Risk analizi modülü
-- `dataretrieval.py`: Veri toplama ve işleme modülü
-- `database.py`: Veritabanı işlemleri
-- `llm_cost_calculator.py`: LLM maliyet hesaplama modülü
-- `ChromaDBData/`: ChromaDB veri depolama dizini
-- `chroma_db/`: ChromaDB yapılandırma dizini
+## Project Structure
 
-## Veritabanı
+- `app.py`:  Main application entry point. Launches the UI and integrates all system modules.
+- `financial_assistant.py`: Financial education module and agent coordination
+- `riskanalyzer.py`: Risk analysis tools, report generation, and the main part that generates the response to the user
+- `dataretrieval.py`: API integrations, data processing, and tool building for the function calling
+- `database.py`: User & session management via SQLite
+- `llm_cost_calculator.py`: Gemini token cost estimation
+- `ChromaDBData/`: ChromaDB persisted documents
+- `chroma_db/`: ChromaDB configuration and embeddings
+- `requirements.txt`: Python dependencies
+-  `users.db`: SQLite database file (auto-generated)
 
-Proje SQLite veritabanı kullanmaktadır. Veritabanı dosyası `users.db` olarak kaydedilir.
+## Database
+
+This project uses a lightweight SQLite database (users.db) for storing user information, login data, and risk profiles. No cloud database is required for local use.
