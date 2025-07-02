@@ -21,10 +21,15 @@ These techniques empower the system to:
 - Provide source-backed, explainable financial answers
 
 Profile Tab:
+
 ![image](https://github.com/user-attachments/assets/27472fd5-00d5-4b0a-9018-ff4f0b7b592c)
+
 Financial Advisor Tab:
+
 ![image](https://github.com/user-attachments/assets/2baa99e2-2d7f-48b3-8761-e3a8a072af54)
+
 Financial Education Tab:
+
 ![image](https://github.com/user-attachments/assets/4a0fec21-b62a-45ae-8fd0-512209aec50a)
 
 
