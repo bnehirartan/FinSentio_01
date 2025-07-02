@@ -1,15 +1,11 @@
 # FinSentio: AI-Powered Financial Assistant
 
-FinSentio is an intelligent financial assistant designed to support users with real-time market insights, risk analysis, document processing, and financial education. It leverages state-of-the-art Large Language Model (LLM) technologies to deliver personalized, data-driven responses in both Turkish and English. 
-
-![image](https://github.com/user-attachments/assets/a3828da3-f6c0-4168-9676-6a3a8382ab69)
-![image](https://github.com/user-attachments/assets/c7f333a8-d0f3-4c4e-a53d-fda82b2dbf51)
-![image](https://github.com/user-attachments/assets/70272d33-5377-4046-b24d-7bcca993479e)
-
+FinSentio is an intelligent financial assistant prototype designed to support users with real-time market insights, risk analysis, document processing, and financial education. It leverages state-of-the-art Large Language Model (LLM) technologies to deliver personalized, data-driven responses in both Turkish and English. 
 
 ## Project Overview
-![image](https://github.com/user-attachments/assets/92dce963-530d-44a5-b93d-941276cadaea)
-![image](https://github.com/user-attachments/assets/fd9033fd-2475-47f9-81ce-d774abfbcf19)
+![image](https://github.com/user-attachments/assets/b01c2965-a6a8-4aa3-a730-15ef0b1231b0)
+![image](https://github.com/user-attachments/assets/2c7c159b-7359-46f9-8191-ff78d683dc4d)
+
 
 This project implements an advanced LLM-based Financial Advisor and Education Assistant system using cutting-edge AI techniques, including:
 
@@ -24,6 +20,14 @@ These techniques empower the system to:
 - Dynamically construct prompts tailored to user intent
 - Provide source-backed, explainable financial answers
 
+Profile Tab:
+![image](https://github.com/user-attachments/assets/27472fd5-00d5-4b0a-9018-ff4f0b7b592c)
+Financial Advisor Tab:
+![image](https://github.com/user-attachments/assets/2baa99e2-2d7f-48b3-8761-e3a8a072af54)
+Financial Education Tab:
+![image](https://github.com/user-attachments/assets/4a0fec21-b62a-45ae-8fd0-512209aec50a)
+
+
 ### Key Features
 - Risk Assessment: Summarized in both table and natural language formats
 - Real-Time Market Insights: Powered by APIs like Finnhub and FRED
@@ -36,9 +40,7 @@ These techniques empower the system to:
 
 - Financial data retrieval and analysis
 - Investment and risk advice based on the saved user profile
-- Veri toplama ve analiz
 - Secure and modular PDF document processing
-- PDF dosya işleme
 - ChromaDB-based persistent knowledge storage
 - Transparent usage cost calculation for LLM queries
 
