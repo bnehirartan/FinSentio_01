@@ -2,7 +2,14 @@
 
 FinSentio is an intelligent financial assistant designed to support users with real-time market insights, risk analysis, document processing, and financial education. It leverages state-of-the-art Large Language Model (LLM) technologies to deliver personalized, data-driven responses in both Turkish and English. 
 
+![image](https://github.com/user-attachments/assets/a3828da3-f6c0-4168-9676-6a3a8382ab69)
+![image](https://github.com/user-attachments/assets/c7f333a8-d0f3-4c4e-a53d-fda82b2dbf51)
+![image](https://github.com/user-attachments/assets/70272d33-5377-4046-b24d-7bcca993479e)
+
+
 ## Project Overview
+![image](https://github.com/user-attachments/assets/92dce963-530d-44a5-b93d-941276cadaea)
+![image](https://github.com/user-attachments/assets/fd9033fd-2475-47f9-81ce-d774abfbcf19)
 
 This project implements an advanced LLM-based Financial Advisor and Education Assistant system using cutting-edge AI techniques, including:
 
